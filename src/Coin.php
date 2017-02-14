@@ -19,7 +19,7 @@
                 $money = fmod($money, $dimes);
                 $number_of_nickels = $money / 0.05;
                 $number_of_nickels = floor($number_of_nickels);
-                $number_of_nickels = "nickles: ". $number_of_nickels;
+                $number_of_nickels = "nickels: ". $number_of_nickels;
 
                 $money = fmod($money, $nickles);
                 $number_of_pennies = $money / 0.01;
