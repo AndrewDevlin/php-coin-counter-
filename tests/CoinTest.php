@@ -6,13 +6,13 @@ require_once "src/Coin.php";
         {
             $test_coin = new Coin;
                 //Arrange
-                $input = 0.85;
+                $input = 1.93;
                 $test_coin->checkCoin($input);
                 //Act
                 $result = $test_coin->checkCoin($input);
                 // $expected_result = 0.10;
                 //Assert
-                $this->AssertEquals("quarters: 3", $result);
+                $this->AssertEquals("pennies: 3", $result);
         }
     }
  ?>
