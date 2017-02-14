@@ -10,9 +10,9 @@ require_once "src/Coin.php";
                 $test_coin->checkCoin($input);
                 //Act
                 $result = $test_coin->checkCoin($input);
-                $expected_result = 0.10;
+                // $expected_result = 0.10;
                 //Assert
-                $this->AssertEquals( $expected_result, $result);
+                $this->AssertEquals("quarters: 3", $result);
         }
     }
  ?>
